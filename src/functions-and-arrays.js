@@ -90,6 +90,14 @@ function uniquifyArray(arrayOfWords){
   if (arrayOfWords.length === 0){
     return null;
   }
+  let newArray = [];
+
+  for (let i = 0; i < arrayOfWords.length; i++){
+    if (newArray.indexOf(arrayOfWords[i]) === -1){
+      newArray.push(arrayOfWords[i])
+    }
+  }
+  return newArray;
 }
 
 // Iteration #6: Find elements
