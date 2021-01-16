@@ -127,10 +127,17 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes(arrayOfNumbers){
-  if (arrayOfNumbers.length === 0){
+function howManyTimes(arrayOfWords, searchWord){
+  if (arrayOfWords.length === 0){
     return 0;
   }
+  let countRepitition = 0;
+  for (let i = 0; i< arrayOfWords.length; i++){
+    if(arrayOfWords[i] === searchWord){
+      countRepitition = countRepitition +1;
+    }
+  }
+  return countRepitition;
 }
 
 // Iteration #8: Bonus
